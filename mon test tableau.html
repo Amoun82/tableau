@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        test d'affichage du tableau
+    </title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <h1>
+        Titre Principale
+    </h1>
+    
+    <h2>
+        Second Titre
+    </h2>
+
+    <h3>
+        Troisieme Titre
+    </h3>
+
+    <h4>
+
+    </h4>
+    <p>
+
+    </p>
+
+    <p1>
+
+    <script>
+
+        let a = 10;
+        console.log(a);
+        let b = 20;
+        console.log(b);
+        let c = b*a;
+        console.log(c);
+
+        if(a>b)
+        {
+            console.log('il pleut aujourd hui');
+        }
+        else
+        {
+            console.log("tu t es fais avoir");
+        }
+
+    </script>
+
+    <script>
+
+        const t_nom = ["stef", "stephane", "antoine", "guillaume", "cedric", "eric", "romane", "marie"];
+        let info = 'mon exemple de tableau : ';
+        let info1 = 'mon exmple de tableau : ';
+        const para = document.querySelector('p');
+        const text = document.querySelector('h4');
+       
+        for(let i = 0; i < t_nom.length; i++)
+        {
+            info += t_nom[i] + ', ';
+            info1 += t_nom[i] + ', ';             
+        }
+
+        info += 'voici la fin du tableau';
+        info1 += 'voici la fin du tableau';
+
+        para.textContent = info;
+        text.textContent = info1;
+
+    </script>
+    
+</body>
+</html>
